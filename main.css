@@ -1,0 +1,87 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+#products-section {
+    background: #ff1b68;
+    width: 100%;
+    height: 528px;
+    padding: 10px;
+
+}
+
+#products-section h1{
+    color: black;
+    font-family: 'Anton', sans-serif;
+}
+
+.section-text{
+    color: #2DDF5C;
+    font-family: inherit;
+}
+ 
+.main-header{
+    width: 100%;
+    background: #2DDF5C;
+    padding: 8px 16px;
+}
+
+/* ~~~~~~~~~~~~ATTENTION HERE!!!!!~~~~~~~~~~~~ */
+/* The function below is an alternative option of what I used instead of the combinator of 
+.main-header > div {
+    display: inline-block;
+}
+.u-host{
+    display: inline-block;
+}
+
+.main-nav{
+    display: inline-block;
+} */
+.main-header > div {
+    display: inline-block;
+}
+
+.main-header__brand{
+    color: #0E4F1F;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+    vertical-align: middle;
+}
+
+.main-nav {
+    display: inline-block;
+    text-align: right;
+    width: calc(100% - 75px);
+    vertical-align: middle;
+}
+
+.main-nav__items{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.main-nav__item{
+    display: inline-block;
+    margin: 10px;
+    /* the styling for the decoration and color did not work because of the default style of the 
+    browser. I am striking it out for advanced selectors below.
+    text-decoration: none;
+    color: #0E4F1F; */
+}
+
+/* The text decoration value set to none and its color decoration did not work,
+because of the default styling of the browser for the anchor tags.
+The way of sorting this out is to use the combinator targeting the parent/child situation,
+for the anchor tag and its parent div, or we add specific classes to the anchor tags that we want to style */
+.main-nav__item a {
+    text-decoration: none;
+    color: #0E4F1F;
+}
