@@ -8,22 +8,57 @@ body {
 }
 
 #products-section {
-    background: #ff1b68;
+    background: url("images/freedom.jpg");
     width: 100%;
     height: 528px;
     padding: 10px;
 
 }
 
+.section-text{
+    color: #2DDF5C;
+    text-align: center;
+}
+
 #products-section h1{
     color: black;
     font-family: 'Anton', sans-serif;
 }
-
-.section-text{
-    color: #2DDF5C;
-    font-family: inherit;
+.plan{
+    background: #D5FFDC;
+    text-align: center;
+    padding: 16px;
+    margin: 8px;
+    display: inline-block;
+    width: 30%;
+    vertical-align: middle;
 }
+
+.plan--major{
+    background: #19B84C;
+    color: white;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.plan__topmost {
+    background: whitesmoke;
+    color: #19B84C;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.plan__list{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.plan__feature{
+    margin: 8px 0;
+}
+
+
  
 .main-header{
     width: 100%;
@@ -84,4 +119,28 @@ for the anchor tag and its parent div, or we add specific classes to the anchor 
 .main-nav__item a {
     text-decoration: none;
     color: #0E4F1F;
+    font-weight: bold;
+    padding: 3px 0;
+}
+/* 
+We group our code together when we have the same selector as in the case below, and we do this
+by adding a comma after an initial selector before writing the next one. */
+.main-nav__item a:hover,
+.main-nav__item a:active {
+    color: whitesmoke;
+    border-bottom: 5px solid;
+}
+
+.main-nav__item--cta a{
+    color: white;
+    background: #FF1B68;
+    padding: 8px 16px;
+    border-radius: 8px;
+}
+
+.main-nav__item--cta a:hover,
+.main-nav__item--cta a:active {
+    color: #FF1B68;
+    background: white;
+    border: none;
 }
