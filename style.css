@@ -57,9 +57,67 @@ body {
 .plan__feature{
     margin: 8px 0;
 }
+/* Styling the button for all three plans */
+.button{
+    background-color: #0E4F1F;
+    color: whitesmoke;
+    border-radius: 10px;
+    font: inherit;
+    border: 1.5px solid #0E4F1F;
+    padding: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
 
+.button:hover {
+    background-color: whitesmoke;
+    color: #0E4F1F;
+}
 
+#key-features{
+    background-color: #FF1B68;
+    margin-top: 80px;
+    padding: 16px;
+    color: whitesmoke;
+}
+
+#key-features .section-text {
+    color: whitesmoke;
+    margin: 32px;
+}
  
+.section__list{
+    display: inline-block;
+}
+
+.key-features__list{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.key-feature{
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+}
+
+.key-feature__image{
+    background: #FFCEDE;
+    width: 128px;
+    border: 2px solid #424242;
+    border-radius: 50%;
+    height: 128px;
+    margin: auto;
+}
+.key-feature__description{
+    text-align: center;
+    font-weight: bold;
+    color: whitesmoke;
+    font-size: 20px;
+}
+
 .main-header{
     width: 100%;
     background: #2DDF5C;
@@ -143,4 +201,27 @@ by adding a comma after an initial selector before writing the next one. */
     color: #FF1B68;
     background: white;
     border: none;
+}
+
+.main-footer{
+    background-color: black;
+}
+
+.main-footer__links{
+    list-style: none;
+    text-align: center;
+}
+
+.main-footer__link{
+    display: inline-block;
+    margin: 0 16px;
+}
+
+.main-footer__link a{
+    color: whitesmoke;
+}
+
+.main-footer__link a:hover,
+.main-footer__link a:active {
+    color: #CCC;
 }
