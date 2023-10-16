@@ -1,12 +1,3 @@
-*{
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Montserrat', sans-serif;
-    margin: 0;
-}
-
 #products-section {
     background: url("images/freedom.jpg");
     width: 100%;
@@ -57,23 +48,6 @@ body {
 .plan__feature{
     margin: 8px 0;
 }
-/* Styling the button for all three plans */
-.button{
-    background-color: #0E4F1F;
-    color: whitesmoke;
-    border-radius: 10px;
-    font: inherit;
-    border: 1.5px solid #0E4F1F;
-    padding: 5px;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.button:hover {
-    background-color: whitesmoke;
-    color: #0E4F1F;
-}
-
 #key-features{
     background-color: #FF1B68;
     margin-top: 80px;
@@ -116,112 +90,4 @@ body {
     font-weight: bold;
     color: whitesmoke;
     font-size: 20px;
-}
-
-.main-header{
-    width: 100%;
-    background: #2DDF5C;
-    padding: 8px 16px;
-}
-
-/* ~~~~~~~~~~~~ATTENTION HERE!!!!!~~~~~~~~~~~~ */
-/* The function below is an alternative option of what I used instead of the combinator of 
-.main-header > div {
-    display: inline-block;
-}
-.u-host{
-    display: inline-block;
-}
-
-.main-nav{
-    display: inline-block;
-} */
-.main-header > div {
-    display: inline-block;
-}
-
-.main-header__brand{
-    color: #0E4F1F;
-    font-weight: bold;
-    font-size: 22px;
-    text-decoration: none;
-    vertical-align: middle;
-}
-
-.main-nav {
-    display: inline-block;
-    text-align: right;
-    width: calc(100% - 75px);
-    vertical-align: middle;
-}
-
-.main-nav__items{
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-.main-nav__item{
-    display: inline-block;
-    margin: 10px;
-    /* the styling for the decoration and color did not work because of the default style of the 
-    browser. I am striking it out for advanced selectors below.
-    text-decoration: none;
-    color: #0E4F1F; */
-}
-
-/* The text decoration value set to none and its color decoration did not work,
-because of the default styling of the browser for the anchor tags.
-The way of sorting this out is to use the combinator targeting the parent/child situation,
-for the anchor tag and its parent div, or we add specific classes to the anchor tags that we want to style */
-.main-nav__item a {
-    text-decoration: none;
-    color: #0E4F1F;
-    font-weight: bold;
-    padding: 3px 0;
-}
-/* 
-We group our code together when we have the same selector as in the case below, and we do this
-by adding a comma after an initial selector before writing the next one. */
-.main-nav__item a:hover,
-.main-nav__item a:active {
-    color: whitesmoke;
-    border-bottom: 5px solid;
-}
-
-.main-nav__item--cta a{
-    color: white;
-    background: #FF1B68;
-    padding: 8px 16px;
-    border-radius: 8px;
-}
-
-.main-nav__item--cta a:hover,
-.main-nav__item--cta a:active {
-    color: #FF1B68;
-    background: white;
-    border: none;
-}
-
-.main-footer{
-    background-color: black;
-}
-
-.main-footer__links{
-    list-style: none;
-    text-align: center;
-}
-
-.main-footer__link{
-    display: inline-block;
-    margin: 0 16px;
-}
-
-.main-footer__link a{
-    color: whitesmoke;
-}
-
-.main-footer__link a:hover,
-.main-footer__link a:active {
-    color: #CCC;
 }
