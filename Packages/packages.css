@@ -1,0 +1,109 @@
+/* body{
+    margin: 0;
+}
+
+h1{
+    color: white;
+}
+h2{
+    color: grey;
+}
+.black-header{
+    color: black;
+}
+p{
+    color: black;
+    border-radius: 0;
+    border: 2px o solid green;
+    background-color: white;
+    padding: 5px 0;
+}
+
+.plus-plan{
+    background-color: #19B84C;
+    border: 2px o solid green;
+    margin: 5px 0 solid green;
+}
+.free-plan{
+    background-color: #19B84C;
+    border: 2px o solid green;
+    margin: 5px 0;
+}
+.premium-plan{
+    background-color: green;
+    border: 2px 0 solid green;
+    margin: 5px 0;
+} */
+
+main{
+    padding-top: 32px;
+}
+
+.package{
+    width: 80%;
+    margin: 16px 0;
+    border: 4px solid #0E4F1F;
+    border-left: none;
+}
+
+.package:hover,
+.package:active {
+    box-shadow: 2px 4px rgba(0, 0, 0, 0.5);
+    border-color: #FF5454;
+}
+
+.package a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    padding: 32px;
+}
+
+.package__subtitle{
+    color: #979797;
+}
+
+.package__info{
+    padding: 16px;
+    border: 1px solid #0E4F1F;
+    font-size: 20px;
+    color: #0E4F1F;
+    background-color: white;
+}
+/* the float property for the supporting div for the float */
+.clear-float{
+    clear: both;
+}
+
+#plus {
+    background: rgba(213, 255, 220, 0.95);
+} 
+
+#free {
+    background: rgba(234, 252, 237, 0.95);
+    margin-left: 15%;
+    border-left: 4px solid #0E4F1F;
+    /* the float property below needs a supporting div, so that the other
+    page elements are not affected by its operation  */
+    float: right;
+    border-right: none;
+    text-align: right;
+}
+
+#free:hover,
+#free:active {
+    box-shadow: 2px 4px rgba(0, 0, 0, 0.5);
+    border-color: #FF5454;
+}
+
+#premium {
+    background: rgba(14, 79, 31, 0.95);
+}
+
+#premium .package__title{
+    color: white;
+}
+
+#premium .package__subtitle{
+    color: #BBB;
+}
