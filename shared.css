@@ -1,4 +1,4 @@
-{
+* {
     box-sizing: border-box;
 }
 
@@ -8,8 +8,10 @@ body {
 }
 .main-header{
     width: 100%;
+    position: fixed;
     background: #2DDF5C;
     padding: 8px 16px;
+    z-index: 1;
 }
 
 /* ~~~~~~~~~~~~ATTENTION HERE!!!!!~~~~~~~~~~~~ */
