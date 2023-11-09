@@ -1,7 +1,7 @@
 #products-section {
     background: linear-gradient( to top, 
     rgba(80, 68, 18, 0.6) 10%, transparent), 
-    url("images/freedom.jpg") left 10% /cover no-repeat border-box,
+    url("images/freedom.jpg") center /cover no-repeat border-box,
      #ff1b68;
     background-size: cover;
     /* background-image: url("images/freedom.jpg");
