@@ -8,6 +8,11 @@ body {
     margin: 0;
 }
 
+main{
+    min-height: calc(100vh - 3.5rem -8rem);
+    margin-top: 3.5rem;
+}
+
 .backdrop{
     display: none;
     background: rgba(0, 0, 0, 0.5);
@@ -69,6 +74,7 @@ body {
   }
   
 
+
 .main-header__brand{
     color: #0E4F1F;
     font-weight: bold;
@@ -79,19 +85,16 @@ body {
     width: 20px;
     display: inline-block;
     vertical-align: middle;
+    height: 2.5rem;
 }
 
 .main-header__brand img {
-    width: 100%;
-    /* height: 100%; */
-    background-color: white;
+    /* width: 100%; */
+    height: 100%;
 }
 
 .main-nav {
-    display: inline-block;
-    text-align: right;
-    width: calc(100% - 122px);
-    vertical-align: middle;
+    display: none;
 }
 
 
@@ -103,7 +106,7 @@ body {
 
 .main-nav__item{
     display: inline-block;
-    margin: 0.625rem;
+    margin: 0 0.625rem;
     /* the styling for the decoration and color did not work because of the default style of the 
     browser. I am striking it out for advanced selectors below.
     text-decoration: none;
@@ -146,6 +149,20 @@ by adding a comma after an initial selector before writing the next one. */
     background: white;
     border: none;
 }
+
+@media(min-width:40rem){
+    .toggle-button {
+        display: none;
+    }
+
+    .main-nav {
+        display: inline-block;
+        text-align: right;
+        width: calc(100%- 44px);
+        vertical-align: middle;
+    }
+  }
+
 /* Styling the button for all three plans */
 .button{
     background-color: #0E4F1F;
@@ -158,7 +175,8 @@ by adding a comma after an initial selector before writing the next one. */
     cursor: pointer;
 }
 
-.button:hover {
+.button:hover,
+.button:active {
     background-color: whitesmoke;
     color: #0E4F1F;
 }
@@ -204,20 +222,31 @@ by adding a comma after an initial selector before writing the next one. */
 .main-footer__links{
     list-style: none;
     text-align: center;
+    margin: 0;
+    padding: 0;
 }
 
 .main-footer__link{
-    display: inline-block;
+    display: block;
     margin: 0 1rem;
+    /* padding: 2.5rem 0; */
 }
 
 .main-footer__link a{
     color: whitesmoke;
+    text-align: none;
 }
 
 .main-footer__link a:hover,
 .main-footer__link a:active {
     color: #CCC;
+}
+
+@media (min-width: 40rem){
+    .main-footer__link {
+        display: inline-block;
+        margin: 0 1rem;
+    }
 }
 
 .open{

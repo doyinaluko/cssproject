@@ -3,7 +3,6 @@
     rgba(80, 68, 18, 0.6) 10%, transparent), 
     url("images/freedom.jpg") center /cover no-repeat border-box,
      #ff1b68;
-    background-size: cover;
     /* background-image: url("images/freedom.jpg");
     background-size: cover;
     background-position: left 10% bottom 20%; */
@@ -28,8 +27,9 @@
     font-size: 1.6rem;
 }
 
-@media (min-width: 40rem) {
+@media (min-width: 40rem) and (min-height: 40rem) {
 #products-section {
+    background-position: left 50% top 25%;
     height: 40vh;
 }
 
@@ -57,6 +57,7 @@
     margin: 0.5rem 0;
     display: block;
     width: 100%;
+    min-width: 12.5rem;
     /* vertical-align: middle; */
 }
 
@@ -84,9 +85,48 @@
     margin: 0.5rem 0;
 }
 
-/* The experimental media queries for the plan section  */
+/* The media queries for the plan section  */
 @media (min-width: 40rem) {
-    
+    .plan__list-div{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.plan{
+    display: inline-block;
+    width: 30%;
+    vertical-align: middle;
+    min-width: 12.5rem;
+    max-width: 25rem;
+
+}
+
+
+.plan--major{
+    background: #19B84C;
+    color: white;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.plan__topmost {
+    background: whitesmoke;
+    color: #19B84C;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+    padding: 0.3rem;
+    border-radius: 8px;
+}
+
+.plan__list{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+.plan__feature{
+    margin: 0.5rem 0.5rem;
+}
 }
 
 
@@ -114,9 +154,7 @@
 }
 
 .key-feature{
-    display: inline-block;
-    width: 30%;
-    vertical-align: top;
+    width: 100%;
 }
 
 .key-feature__image{
@@ -133,6 +171,15 @@
     font-weight: bold;
     color: whitesmoke;
     font-size: 1.25rem;
+}
+
+@media (min-width: 40rem){
+    .key-feature{
+        display: inline-block;
+        width: 30%;
+        vertical-align: top;
+        max-width: 25rem;
+    }
 }
 
 .modal {
