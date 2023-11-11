@@ -12,18 +12,17 @@ main{
 
   .testimonial__image-container {
     width: 100%;
+    max-width: 40rem;
    box-shadow: 3px 3px 5px 3px rgba(0, 0, 0, 0.3);
   }
 
   .testimonial__image {
     width: 100%;
-    /* max-width: 40rem; */
   }
   
   .testimonial__info {
     text-align: right;
     padding: 0.9rem;
-    width: 100%;
   }
   
   #customer-2.testimonial {
