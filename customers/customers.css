@@ -58,10 +58,7 @@ main{
   .testimonial__text {
     margin: 0.2rem;
   }
-  
-  .main-footer__links a {
-    text-decoration: none;
-  }
+
 
   @media (min-width:40rem){
     .testimonial {

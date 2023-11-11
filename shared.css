@@ -183,6 +183,13 @@ by adding a comma after an initial selector before writing the next one. */
     outline: none;
 }
 
+.button[disabled] {
+    cursor: not-allowed;
+    border: #a1a1a1;
+    background: #ccc;
+    color: #a1a1a1;
+}
+
 .mobile-nav {
     display: none;
     position: fixed;
@@ -235,6 +242,7 @@ by adding a comma after an initial selector before writing the next one. */
 .main-footer__link a{
     color: whitesmoke;
     text-align: none;
+    text-decoration: none;
 }
 
 .main-footer__link a:hover,
