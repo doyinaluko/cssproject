@@ -9,7 +9,7 @@ body {
 }
 
 main{
-    min-height: calc(100vh - 3.5rem -8rem);
+    min-height: calc(100vh - 3.5rem - 8rem);
     margin-top: 3.5rem;
 }
 
@@ -215,6 +215,8 @@ by adding a comma after an initial selector before writing the next one. */
 
 .main-footer{
     background-color: black;
+    padding: 2rem;
+    margin-top: 3rem;
 }
 
 .main-footer__links{
@@ -226,7 +228,7 @@ by adding a comma after an initial selector before writing the next one. */
 
 .main-footer__link{
     display: block;
-    margin: 0 1rem;
+    margin: 1rem o;
     /* padding: 2.5rem 0; */
 }
 
