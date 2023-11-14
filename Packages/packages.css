@@ -92,6 +92,7 @@ main {
     font-size: 1.25rem;
     color: #0E4F1F;
     background-color: white;
+    font-family: "Roboto", sans-serif;
 }
 
 /* the float property for the supporting div for the float */
