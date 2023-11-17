@@ -46,9 +46,10 @@
 }
 
 .plan__list-div{
-    width: 100%;
-    /* margin: auto; */
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .plan{
     background: #D5FFDC;
@@ -88,17 +89,21 @@
 /* The media queries for the plan section  */
 @media (min-width: 40rem) {
     .plan__list-div{
-    width: 80%;
-    margin: auto;
-    text-align: center;
+        width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 .plan{
-    display: inline-block;
     width: 30%;
-    vertical-align: middle;
     min-width: 12.5rem;
     max-width: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 28rem;
 
 }
 
@@ -107,6 +112,8 @@
     background: #19B84C;
     color: white;
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+    height: 30rem;
+    z-index: 50;
 }
 
 .plan__topmost {
@@ -150,11 +157,16 @@
     list-style: none;
     margin: 0;
     padding: 0;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .key-feature{
     width: 100%;
+    align-items: center;
+    justify-content: center;
 }
 
 .key-feature__image{
@@ -175,10 +187,17 @@
 
 @media (min-width: 40rem){
     .key-feature{
-        display: inline-block;
         width: 30%;
-        vertical-align: top;
         max-width: 25rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .key-features__list{
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
     }
 }
 

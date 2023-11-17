@@ -32,9 +32,12 @@ main{
     position: fixed;
     background: #2DDF5C;
     padding: 0.5rem 1rem;
-    z-index: 1;
+    z-index: 51;
     top: 0;
     left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 /* ~~~~~~~~~~~~ATTENTION HERE!!!!!~~~~~~~~~~~~ */
@@ -49,10 +52,6 @@ main{
 .main-nav{
     display: inline-block;
 } */
-.main-header > div {
-    display: inline-block;
-    vertical-align: middle;
-}
 
 .toggle-button {
     width: 3rem;
@@ -83,15 +82,12 @@ main{
     font-weight: bold;
     font-size: 1.375rem;
     text-decoration: none;
-    vertical-align: middle;
-    display: inline-block;
-    vertical-align: middle;
-    height: 2.5rem;
 }
 
 .main-header__brand img {
     /* width: 100%; */
-    height: 100%;
+    height: 2.5rem;
+    vertical-align: middle;
 }
 
 .main-nav {
@@ -103,15 +99,13 @@ main{
     margin: 0;
     padding: 0;
     list-style: none;
+    display: flex;
+    vertical-align: middle;
+    justify-content: space-between;
 }
 
 .main-nav__item{
-    display: inline-block;
     margin: 0 1rem;
-    /* the styling for the decoration and color did not work because of the default style of the 
-    browser. I am striking it out for advanced selectors below.
-    text-decoration: none;
-    color: #0E4F1F; */
 }
 
 /* The text decoration value set to none and its color decoration did not work,
@@ -157,10 +151,11 @@ by adding a comma after an initial selector before writing the next one. */
     }
 
     .main-nav {
-        display: inline-block;
+        /* display: inline-block;
         text-align: right;
         width: calc(100% - 44px);
-        vertical-align: middle;
+        vertical-align: middle; */
+        display: flex;
     }
   }
 
@@ -208,9 +203,12 @@ by adding a comma after an initial selector before writing the next one. */
     width: 90%;
     height: 100%;
     list-style: none;
-    margin: 10% auto;
     padding: 0;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
   }
   
   .mobile-nav__item {
@@ -231,14 +229,17 @@ by adding a comma after an initial selector before writing the next one. */
 
 .main-footer__links{
     list-style: none;
-    text-align: center;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .main-footer__link{
-    display: block;
-    margin: 1rem o;
+    margin: 0.5rem o;
     /* padding: 2.5rem 0; */
 }
 
@@ -255,8 +256,14 @@ by adding a comma after an initial selector before writing the next one. */
 
 @media (min-width: 40rem){
     .main-footer__link {
-        display: inline-block;
         margin: 0 1rem;
+    }
+
+    .main-footer__links{
+        display: flex;
+        flex-direction: row;
+        align-items: center;  
+        justify-content: center;
     }
 }
 
