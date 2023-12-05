@@ -29,6 +29,7 @@ main{
 
 .backdrop{
     display: none;
+    opacity: 0;
     background: rgba(0, 0, 0, 0.5);
     width: 100vw;
     height: 100vh;
@@ -36,6 +37,7 @@ main{
     top: 0;
     left: 0;
     z-index: 100;
+    transition: opacity 2s linear;
 }
 
 .main-header{
@@ -282,4 +284,6 @@ by adding a comma after an initial selector before writing the next one. */
 
 .open{
     display: block !important;
+    opacity: 1 !important;
+    transform: translateY(0) !important;
 }
