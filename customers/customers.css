@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 main{
   padding-top: 2rem;
 }
@@ -13,15 +20,26 @@ main{
   .testimonial__image-container {
     width: 50%;
     max-width: 40rem;
-   box-shadow: 3px 3px 5px 3px rgba(0, 0, 0, 0.3);
-   transform: skew(20deg);
+   -webkit-box-shadow: 3px 3px 5px 3px rgba(0, 0, 0, 0.3);
+           box-shadow: 3px 3px 5px 3px rgba(0, 0, 0, 0.3);
+   -webkit-transform: skew(20deg);
+       -ms-transform: skew(20deg);
+           transform: skew(20deg);
    overflow: hidden;
+  }
+
+  #customer-1:hover .testimonial__image-container, 
+  #customer-2:hover .testimonial__image-container {
+    -webkit-animation: flip-customer 1s ease-out forwards;
+            animation: flip-customer 1s ease-out forwards;
   }
 
   .testimonial__image {
     width: 100%;
     vertical-align: top;
-    transform: skew(-20deg) scale(1.4);
+    -webkit-transform: skew(-20deg) scale(1.4);
+        -ms-transform: skew(-20deg) scale(1.4);
+            transform: skew(-20deg) scale(1.4);
   }
   
   .testimonial__info {
@@ -68,9 +86,14 @@ main{
     .testimonial {
       margin: 3rem auto;
       max-width: 93.75rem;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      align-items: center;
-      justify-content: space-around;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
     }
     
     .testimonial__list {
@@ -80,7 +103,8 @@ main{
   
     .testimonial__image-container {
       width: 65%;
-      box-shadow: 3px 3px 5px 3px rgba(0, 0, 0, 0.3);
+      -webkit-box-shadow: 3px 3px 5px 3px rgba(0, 0, 0, 0.3);
+              box-shadow: 3px 3px 5px 3px rgba(0, 0, 0, 0.3);
     }
   
     .testimonial__image {
@@ -89,5 +113,35 @@ main{
     
     .testimonial__info {
       width: 30%;
+    }
+  }
+
+  @-webkit-keyframes flip-customer {
+    0% {
+      -webkit-transform: rotateY(0) skew(20deg);
+              transform: rotateY(0) skew(20deg);
+    }
+    50% {
+      -webkit-transform: rotateY(160deg) skew(20deg);
+              transform: rotateY(160deg) skew(20deg);
+    }
+    100% {
+      -webkit-transform: rotateY(360deg) skew(20deg);
+              transform: rotateY(360deg) skew(20deg);
+    }
+  }
+
+  @keyframes flip-customer {
+    0% {
+      -webkit-transform: rotateY(0) skew(20deg);
+              transform: rotateY(0) skew(20deg);
+    }
+    50% {
+      -webkit-transform: rotateY(160deg) skew(20deg);
+              transform: rotateY(160deg) skew(20deg);
+    }
+    100% {
+      -webkit-transform: rotateY(360deg) skew(20deg);
+              transform: rotateY(360deg) skew(20deg);
     }
   }
